@@ -1,0 +1,106 @@
+//*https://codepen.io/gorjnamron/pen/vYGJqmV//*
+ 1. What is Semantic HTML? 
+    2. What is HTML used for? 
+Layout structure for basic web content.
+    3. What is an attribute and where do we put it? 
+Attributes are an added source of info to determin a certain instruction to a tag.
+    4. What is the h1 tag used for? How many times should I use it on a page?
+h1 Tag is generally used one time for the main opening title.
+    5. Name two tags that have required attributes
+The <img tag and the ,link tag need the attributes "src" and "href"
+    6. What do we put in the head of our HTML document? 
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Raleway?selection.family=Raleway">
+<script src="js/script.js"></script>
+<title>Blank WEB SetUp</title>
+    7. What is an id? 
+Id's are a given strings of text for identification in the css.
+    8. What elements can I add an id to?
+Any element escept <base> , <head> , <html> , <meta> , <script> , <style> , and <title> . 
+    9. How many times can I use the same id on a page? 
+Once
+    10. What is a class? 
+The class is an attribute which specifies one or more class names for an HTML element. The class attribute can be used on any HTML element. The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name.
+    11. What elements can I add a class to? 
+any
+    12. How many times can I use the same class on a page?
+Search Results
+Featured snippet from the web
+There is no technical limit (barring the amount of memory the browser may be consuming), but one should heavily consider having loads of classes on any element as the browser will have to parse all the classes, apply those styles and render the page. 
+    13. How do I get my link to open in a new tab?
+Search Results
+Featured snippet from the web
+Generally, you can hold down the control button – or the command key on a Mac computer – to open a link in a new tab. You can also click on a link and hold down the mouse without releasing, dragging the link to the browser's tab bar to open it in a new tab.
+    14. What is the alt attribute in the image tag used for? 
+The required alt attribute specifies an alternate text for an image, if the image cannot be displayed. The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+    15. How do I reference an id?
+It is also used by JavaScript to access and manipulate the element with the specific id. The syntax for id is: write a hash character (#) character, followed by an id name.
+    16. What is the difference between a section and a div?
+<section> means that the content inside is grouped (i.e. relates to a single theme), and should appear as an entry in an outline of the page. <div> , on the other hand, does not convey any meaning, aside from any found in its class , lang and title attributes.
+    17. What is CSS used for? 
+style in html
+    18. How to we select an element? Example - every h2 on the page
+h2 {}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+In the CSS, a class selector is a name preceded by a full stop (“.”) and an ID selector is a name preceded by a hash character (“#”). The difference between an ID and a class is that an ID can be used to identify one element, whereas a class can be used to identify more than one.
+    20. How do we select classes in CSS?
+.
+    21. How do we select a p element with a single class of “human””?
+.human p
+    22. What is a parent child selector? When would this be useful? 
+The ("parent > child") selector selects all elements that are a direct child of the specified element.
+When we need to select everything within the parrent
+    23. How do you select all links within a div with the class of sidebar?
+.sidebar {}
+    24. What is a pseudo selector?
+A CSS pseudo-class is a keyword added to a selector that specifies a special state of the selected element(s). For example, :hover can be used to change a button's color when the user's pointer hovers over it
+    25. What do we use the change the spacing between lines?
+padding
+    26. What do we use to change the spacing between letters?
+Search Results
+Featured snippet from the web
+Defines the spacing between the characters of a block of text.
+default letter-spacing: normal; The spacing between the characters is normal. ...
+letter-spacing: 2px; You can use pixel values.
+letter-spacing: 0.1em; You can use em values: this allows the spacing to remain relative to the font-size.
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+uppercase: makes all of the letters in the selected text uppercase or ALL CAPS. capitalize: capitalizes the first letter of each word in the selected text
+    28. How do I add a 1px border around my div that is dotted and black?
+border 1px soloid black;
+    29. How do I select everything on the page? 
+cntrl A
+    30. How do I write a comment in CSS?
+/*
+
+    31. How do I find out what file I am in, when I am using the command line? 
+cd pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+cd ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+cd rm -r
+    34. Why should I use version control? 
+so I will allways have an original version
+    35. How often should I commit to github?
+regularly
+    36. What is the command we would use to push our repo up to github? 
+git push -u origin ""
+    37. Walk me through Lambda's git flow. 
+fork "add collaborator", clone, git checkout -b "FN-LN",git add ., git commit -m "message", git push -u origin "FN-LN"
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+By default, inline elements do not force a new line to begin in the document flow. Block elements, on the other hand, typically cause a line break to occur (although, as usual, this can be changed using CSS)
+    2. What happens when an element is positioned absolutely? 
+Search Results
+Featured snippet from the web
+Absolute positioning
+In contrast, an element that is absolutely positioned is taken out of the flow; thus, other elements are positioned as if it did not exist. The absolutely positioned element is positioned relative to its nearest positioned ancestor (i.e., the nearest ancestor that is not static ).
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+use %
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+using box within box
